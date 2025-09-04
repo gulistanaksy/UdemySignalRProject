@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace SignalR.DataAccessLayer.Concrete
 {
-    internal class SignalRContext: DbContext
+    public class SignalRContext: DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
