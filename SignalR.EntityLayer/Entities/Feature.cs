@@ -1,4 +1,4 @@
-﻿namespace SignalRApi.EntityLayer.Entities
+﻿namespace SignalR.EntityLayer.Entities
 {
     // öne çıkarılanlar
     public class Feature

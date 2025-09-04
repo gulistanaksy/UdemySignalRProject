@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SignalR.EntityLayer.Entities
+﻿namespace SignalR.EntityLayer.Entities
 {
-    internal class Testimonial
+    public class Testimonial
     {
         public int TestimonialId { get; set; }
         public string Name { get; set; }
