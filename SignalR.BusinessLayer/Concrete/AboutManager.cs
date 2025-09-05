@@ -40,7 +40,7 @@ namespace SignalR.BusinessLayer.Concrete
 
         public void TUpdate(About entity)
         {
-            throw new NotImplementedException();
+            _aboutDal.Update(entity);
         }
     }
 }

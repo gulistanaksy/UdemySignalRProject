@@ -16,6 +16,4 @@ namespace SignalR.DataAccessLayer.EntityFramework
         {
         }
     }
-    {
-    }
 }
