@@ -46,7 +46,7 @@ namespace SignalRApi.Controllers
             return Ok(value);
         }
         [HttpPut] 
-        public IActionResult UpdateCagtegor(UpdateCategoryDto updateCategoryDto)
+        public IActionResult UpdateCategory(UpdateCategoryDto updateCategoryDto)
         {
             var value = _mapper.Map<Category>(updateCategoryDto);
             _categoryService.TUpdate(value);
