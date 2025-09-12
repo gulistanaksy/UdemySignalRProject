@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "SignalRWebUI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:55821;http://localhost:55822"
+    }
+  }
+}

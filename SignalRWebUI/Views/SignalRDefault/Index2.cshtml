@@ -22,13 +22,13 @@
 
                         $(document).ready(() => {
 
-                            var connection = new signalR.HubConnectionBuilder().withUrl("https://localhost:7186/SignalRHub").build();
+                            var connection = new signalR.HubConnectionBuilder().withUrl("https://localhost:7296/SignalRHub").build();
                             $("#connstatus").text(connection.state);
                             connection.start().then(() => {
                                 $("#connstatus").text(connection.state);
                                 setInterval(() => {
                                     connection.invoke("SendCategoryCount");
-                                }, 1000);
+                                }, 1000); //  1 saniyede bir çağırır
                                
                             }).catch((err) => { console.log(err) });
 
