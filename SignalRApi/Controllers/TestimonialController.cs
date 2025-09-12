@@ -34,14 +34,14 @@ namespace SignalRApi.Controllers
             _testimonialService.TAdd(value);
             return Ok("Müşteri yorumu eklendi.");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteTestimonial(int id)
         {
             var value = _testimonialService.TGetById(id);
             _testimonialService.TDelete(value);
             return Ok("Müşteri yorumu silindi");
         }
-        [HttpGet("GetTestimonial")]
+        [HttpGet("{id}")]
         public IActionResult GetTestimonial(int id)
         {
             var value = _testimonialService.TGetById(id);

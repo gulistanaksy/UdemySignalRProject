@@ -32,14 +32,14 @@ namespace SignalRApi.Controllers
             _categoryService.TAdd(value);
             return Ok("Kategori eklendi.");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteCategory(int id)
         {
             var value = _categoryService.TGetById(id);
             _categoryService.TDelete(value);
             return Ok("Kategori silindi");
         }
-        [HttpGet("GetCategory")]
+        [HttpGet("{id}")]
         public IActionResult GetCategory(int id)
         {
             var value = _categoryService.TGetById(id);
